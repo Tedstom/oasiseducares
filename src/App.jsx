@@ -1,7 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+
 import Home from "./pages/Home";
 import Countries from "./pages/Countries";
 import CountryDetails from "./pages/CountryDetails";
@@ -13,10 +16,40 @@ import Contact from "./pages/Contact";
 import ApplyNow from "./pages/ApplyNow";
 import MBBSBulgaria from "./pages/MBBSBulgaria";
 
+
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      return;
+    }
+
+    const id = location.hash.substring(1);
+
+    setTimeout(() => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+  }, [location.pathname, location.hash]);
+
+  return null;
+}
+
+
 export default function App() {
   return (
     <>
+      <ScrollToHash />
+
       <Navbar />
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,6 +64,7 @@ export default function App() {
           <Route path="/mbbs-in-bulgaria" element={<MBBSBulgaria />} />
         </Routes>
       </main>
+
       <Footer />
       <WhatsAppButton />
     </>

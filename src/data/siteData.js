@@ -215,7 +215,7 @@ export const services = [
 ];
 
 export const testimonials = [
-  { name: "Alwin Thomas", course: "Student – Pleven Medical University", text: "Personalized attention that makes a difference. They took time to understand my academic background and career goals. The plan they created felt truly tailored for me." },
+  { name: "Alwin Thomas", course: "Student – Pleven Medical University", text: "The team took the time to understand my goals and requirements and provided clear, practical guidance throughout the process. Their support made the entire experience smooth and reassuring." },
   { name: "Alwin Rajan", course: "Student – Medical University of Varna", text: "Smooth and efficient. From university shortlisting to post-arrival support, everything was handled smoothly. They even helped me connect with other students going abroad." },
   { name: "Beon Sibi", course: "Student – Pleven Medical University", text: "Personalized attention that makes a difference. They took time to understand my academic background and career goals. The plan they created felt truly tailored for me." },
   { name: "Muhammed Aslam Shereef", course: "Student – Pleven Medical University", text: "Highly professional and reliable. I was confused about which country to study in, but the team gave me clear guidance based on my profile and preferences. They were always quick to respond and super helpful." }

@@ -84,7 +84,7 @@ export default function Footer() {
                             </strong>
 
                             <span>
-                                210, M-2, Yogeshwar Building
+                                201, M-2, Yogeshwar Building
                             </span>
 
                             <span>
@@ -103,8 +103,8 @@ export default function Footer() {
 
                         <Phone size={16} />
 
-                        <a href="tel:+911123414303">
-                            +91-11-23414303
+                        <a href="tel:+911123414306">
+                            +91-11-23414306
                         </a>
 
                     </div>
@@ -135,7 +135,7 @@ export default function Footer() {
             =================================================== */}
                 <div className="footer-office">
 
-                    <h3>UK Contact</h3>
+                    <h3>UK REPRESENTATIVE</h3>
 
                     <div className="footer-contact-row">
 
@@ -143,12 +143,10 @@ export default function Footer() {
 
                         <div>
 
-                            <span>
-                                Anju Elize Tom - 07436 348910
-                            </span>
+
 
                             <span>
-                                Subin Jose 07436 348905
+                                Subin Jose -  +44 1202 74363 48905 ,
                             </span>
 
                             <span>
@@ -169,7 +167,7 @@ export default function Footer() {
                         <Phone size={16} />
 
                         <span>
-                            01202 7436 348910
+                            +44 1202 74363 48905 ,
                         </span>
 
                     </div>
@@ -206,7 +204,7 @@ export default function Footer() {
                             <UserRound size={16} />
 
                             <strong>
-                                Ansel
+                                Ansel Teddy
                             </strong>
 
                         </div>
@@ -227,8 +225,8 @@ export default function Footer() {
 
                             <Mail size={16} />
 
-                            <a href="mailto:ansel@oasiseducares.com">
-                                ansel@oasiseducares.com
+                            <a href="mailto:info@oasiseducares.com">
+                                info@oasiseducares.com
                             </a>
 
                         </div>
@@ -318,12 +316,12 @@ export default function Footer() {
                     </a>
 
 
-                    <Link
-                        to="/apply"
+                    <a
+                        href="/contact#counselling-form"
                         className="footer-counselling"
                     >
                         Book Free Counselling
-                    </Link>
+                    </a>
 
                 </div>
 

@@ -754,6 +754,145 @@ textarea {
   color: #dce8ff
 }
 
+/* =========================================
+   STUDENT TESTIMONIALS
+   ========================================= */
+
+.testimonials-section {
+  background: var(--bg);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 28px 24px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+/* -----------------------------------------
+   PERSON
+   ----------------------------------------- */
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.testimonial-photo {
+  width: 64px;
+  height: 64px;
+
+  flex: 0 0 64px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid var(--card-bg);
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
+}
+
+.testimonial-person-info h3 {
+  margin: 0 0 3px;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.testimonial-person-info span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+
+/* -----------------------------------------
+   STARS
+   ----------------------------------------- */
+
+.testimonial-stars {
+  margin-bottom: 13px;
+
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+
+  color: #f4b400;
+}
+
+
+/* -----------------------------------------
+   TESTIMONIAL CONTENT
+   ----------------------------------------- */
+
+.testimonial-card h4 {
+  margin: 0 0 10px;
+
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.testimonial-card p {
+  margin: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .testimonial-card {
+    padding: 24px 20px;
+  }
+
+  .testimonial-photo {
+    width: 60px;
+    height: 60px;
+    flex-basis: 60px;
+  }
+}
+
 /* Services */
 .service-grid {
   display: grid;
@@ -1379,6 +1518,335 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 35px
+}
+
+
+/* =========================================
+   MEET OUR DIRECTOR
+   ========================================= */
+
+.director-section {
+  background: var(--bg);
+}
+
+.director-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 65px;
+  align-items: center;
+}
+
+.director-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.director-photo-card {
+  width: 285px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.director-photo {
+  width: 100%;
+  height: 340px;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.director-photo-caption {
+  padding: 16px 18px 18px;
+  text-align: center;
+}
+
+.director-photo-caption strong {
+  display: block;
+  margin-bottom: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.director-photo-caption span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.director-content {
+  max-width: 790px;
+}
+
+.director-content h2 {
+  margin: 7px 0 22px;
+}
+
+.director-content p {
+  margin: 0 0 14px;
+  line-height: 1.68;
+  font-size: 14px;
+}
+
+.director-content strong {
+  color: var(--text);
+}
+
+.director-quote {
+  position: relative;
+  margin-top: 24px;
+  padding: 19px 24px 19px 45px;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 12px 12px 0;
+  background: var(--soft);
+}
+
+.director-quote p {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.65;
+  font-style: italic;
+}
+
+.quote-mark {
+  position: absolute;
+  left: 14px;
+  top: 7px;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+html[data-theme="dark"] .director-photo-card,
+html:not([data-theme]) .director-photo-card {
+  background: #0d1b31;
+  border-color: #29405f;
+}
+
+html[data-theme="dark"] .director-photo-caption strong,
+html:not([data-theme]) .director-photo-caption strong {
+  color: #edf3ff;
+}
+
+html[data-theme="dark"] .director-content strong,
+html:not([data-theme]) .director-content strong {
+  color: #edf3ff;
+}
+
+html[data-theme="dark"] .director-quote,
+html:not([data-theme]) .director-quote {
+  background: #10213b;
+}
+
+html[data-theme="dark"] .director-quote p,
+html:not([data-theme]) .director-quote p {
+  color: #dce7f8;
+}
+
+@media (max-width: 950px) {
+  .director-layout {
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .director-photo-card {
+    width: 235px;
+  }
+
+  .director-photo {
+    height: 290px;
+  }
+}
+
+@media (max-width: 720px) {
+  .director-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .director-photo-wrap {
+    justify-content: center;
+  }
+
+  .director-photo-card {
+    width: 250px;
+  }
+
+  .director-photo {
+    height: 300px;
+  }
+
+  .director-content {
+    max-width: 100%;
+  }
+
+  .director-name {
+    margin: 8px 0 4px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+}
+
+
+/* Our Credentials */
+.credentials-section {
+  background: var(--bg);
+}
+
+.credentials-strip {
+  margin-top: 42px;
+  padding: 28px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.credential-item {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.credential-logo {
+  flex: 0 0 105px;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e6ebf2;
+  border-radius: 14px;
+}
+
+.credential-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.credential-content {
+  min-width: 0;
+}
+
+.credential-content h3 {
+  margin: 0 0 3px;
+  font-size: 17px;
+}
+
+.credential-content span {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}
+
+.credential-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.credential-divider {
+  width: 1px;
+  height: 86px;
+  background: var(--border);
+}
+
+html[data-theme="dark"] .credentials-strip,
+html:not([data-theme]) .credentials-strip {
+  background: #0d1b31;
+  border-color: #29405f;
+}
+
+html[data-theme="dark"] .credential-logo,
+html:not([data-theme]) .credential-logo {
+  background: #fff;
+  border-color: #dfe5ee;
+}
+
+html[data-theme="dark"] .credential-content h3,
+html:not([data-theme]) .credential-content h3 {
+  color: #edf3ff;
+}
+
+html[data-theme="dark"] .credential-content span,
+html:not([data-theme]) .credential-content span {
+  color: #82aaff;
+}
+
+html[data-theme="dark"] .credential-content p,
+html:not([data-theme]) .credential-content p {
+  color: #91a8c8;
+}
+
+html[data-theme="light"] .credentials-strip {
+  background: #fff;
+  border-color: #dfe6f0;
+}
+
+@media (max-width: 1180px) {
+  .credentials-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .credential-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .credentials-strip {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .credential-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .credentials-strip {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .credential-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .credential-logo {
+    width: 120px;
+    height: 120px;
+    flex-basis: 120px;
+  }
+
+  .credential-content p {
+    font-size: 12px;
+  }
 }
 
 /* MBBS detail page */
@@ -4127,3 +4595,7 @@ html[data-theme="dark"] .theme-toggle {
 /* ================================================================
    END OF FINAL STABILITY OVERRIDES
    ================================================================ */
+
+#counselling-form {
+  scroll-margin-top: 100px;
+}

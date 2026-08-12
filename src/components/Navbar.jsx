@@ -13,7 +13,7 @@ export default function Navbar() {
     ["/courses", "Courses"],
     ["/universities", "Universities"],
     ["/services", "Services"],
-    ["/about", "About"],
+    ["/about", "About Us"],
     ["/contact", "Contact"],
   ];
 

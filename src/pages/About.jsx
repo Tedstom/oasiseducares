@@ -5,17 +5,17 @@ const strengths = [
   {
     icon: <Award />,
     title: "25+ Years of Travel Experience",
-    text: "Oasis Xpress Travel And Tours is one of India's oldest and reputed travel management companies, with over 25 years of experience in the industry."
+    text: "The Oasis Xpress Travel And Tours is one of India's oldest and reputed travel management companies, with over 25 years of experience in the industry."
   },
   {
     icon: <GraduationCap />,
     title: "Education & Travel Expertise",
-    text: "Oasis Educares is the overseas education consultancy division of Oasis Xpress Travel And Tours, bringing education and travel expertise together to support students."
+    text: "Oasis Educares is the overseas education consultancy division of The Oasis Xpress Travel And Tours, bringing education and travel expertise together to support students."
   },
   {
     icon: <ShieldCheck />,
-    title: "IATA-Certified Heritage",
-    text: "Oasis Xpress was among the early travel companies to receive IATA certification and has maintained a strong focus on service excellence."
+    title: "IATA Travel Heritage",
+    text: "Oasis Xpress has a long-standing association with the international air travel industry, including IATA accreditation and a strong focus on professional service."
   },
   {
     icon: <Globe2 />,
@@ -73,8 +73,103 @@ export default function About() {
             <div className="heritage-line"></div>
             <div className="heritage-points">
               <span><CheckCircle2 /> IATA-certified travel heritage</span>
-              <span><CheckCircle2 /> TAFI / TAAI / UFTAA engagement</span>
+              <span><CheckCircle2 /> TAFI / TAAI / ETAA engagement</span>
               <span><CheckCircle2 /> Education + travel support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =========================================
+    MEET OUR DIRECTOR
+    ========================================= */}
+
+      <section className="section director-section">
+        <div className="container">
+          <div className="director-layout">
+
+            {/* Director Photo */}
+            <div className="director-photo-wrap">
+              <div className="director-photo-card">
+                <img
+                  src="/director.png"
+                  alt="Director - The Oasis Xpress Travel And Tours"
+                  className="director-photo"
+                />
+
+                <div className="director-photo-caption">
+                  <strong>Teddy M Thomas</strong>
+                  <span>Director, The Oasis Xpress Travel And Tours</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Director Content */}
+            <div className="director-content">
+
+              <span className="eyebrow">MEET OUR DIRECTOR</span>
+
+              <h2>
+                Experience, Expertise & a Global Perspective
+              </h2>
+
+              <p>
+                With a professional journey spanning
+                <strong> travel, tourism, visa services, technology and
+                  international business</strong>, our Director brings extensive
+                industry experience and international exposure to
+                <strong> The Oasis Xpress Travel And Tours</strong>.
+              </p>
+
+              <p>
+                An <strong>Electronics & Communication Engineering graduate</strong>,
+                he began his career in technology before developing his professional
+                expertise in the travel industry. With experience in
+                <strong> international travel, visa services, travel planning,
+                  ticketing and destination management</strong>, he has helped
+                travellers navigate the complexities of international journeys.
+              </p>
+
+              <p>
+                Having personally travelled to <strong>more than 40 countries</strong>,
+                he brings first-hand knowledge of destinations, cultures and
+                international travel environments.
+              </p>
+
+              <p>
+                His contribution to the travel industry extends beyond the company.
+                He has served as <strong>National Joint Treasurer of the Travel
+                  Agents Federation of India (TAFI)</strong> and has been associated
+                with the travel industry's Conventions Committee, contributing to
+                international conventions in
+                <strong> Dubai, South Africa, Israel and Turkey</strong>.
+              </p>
+
+              <p>
+                His background in <strong>technology and software development</strong>
+                has also shaped the company's approach to combining professional
+                travel expertise with modern digital solutions.
+              </p>
+
+              <p>
+                This experience forms an important foundation for
+                <strong> Oasis Educares</strong>, the overseas education consultancy
+                division of <strong>The Oasis Xpress Travel And Tours</strong>.
+                Oasis Educares brings together international travel knowledge,
+                visa experience and destination expertise to guide students through
+                <strong> university selection, admissions, visa processes and their
+                  journey abroad</strong>.
+              </p>
+
+              <div className="director-quote">
+                <span className="quote-mark">“</span>
+
+                <p>
+                  Our aim is to understand the traveller or student, understand the
+                  journey, and provide honest guidance and dependable support every
+                  step of the way.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -96,6 +191,83 @@ export default function About() {
                 <p>{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section credentials-section">
+        <div className="container">
+          <div className="section-title center">
+            <span className="eyebrow">OUR CREDENTIALS</span>
+            <h2>Accreditations & Industry Memberships</h2>
+            <p>
+              Our travel heritage is supported by recognised industry affiliations
+              and professional associations.
+            </p>
+          </div>
+
+          <div className="credentials-strip">
+            <div className="credential-item">
+              <div className="credential-logo iata">
+                <img src="/IATA_Accredited_Agent.png" alt="IATA Accredited Agent" />
+              </div>
+              <div className="credential-content">
+                <h3>IATA</h3>
+                <span>Accredited Travel Agent</span>
+                <p>
+                  Long-standing association with the international air travel
+                  industry through Oasis Xpress Travel And Tours.
+                </p>
+              </div>
+            </div>
+
+            <div className="credential-divider" aria-hidden="true"></div>
+
+            <div className="credential-item">
+              <div className="credential-logo taai">
+                <img src="/TAAI_Member.png" alt="TAAI Member" />
+              </div>
+              <div className="credential-content">
+                <h3>TAAI</h3>
+                <span>Industry Membership</span>
+                <p>
+                  Engagement with the Travel Agents Association of India and
+                  India's professional travel community.
+                </p>
+              </div>
+            </div>
+
+            <div className="credential-divider" aria-hidden="true"></div>
+
+            <div className="credential-item">
+              <div className="credential-logo tafi">
+                <img src="/TAFI_Member.png" alt="TAFI Member" />
+              </div>
+              <div className="credential-content">
+                <h3>TAFI</h3>
+                <span>Industry Membership</span>
+                <p>
+                  Engagement with the Travel Agents Federation of India and
+                  the wider travel industry.
+                </p>
+              </div>
+            </div>
+
+            <div className="credential-divider" aria-hidden="true"></div>
+
+            <div className="credential-item">
+              <div className="credential-logo etaa">
+                <img src="/ETAA_Member.png" alt="ETAA Member" />
+              </div>
+              <div className="credential-content">
+                <h3>ETAA</h3>
+                <span>Industry Membership</span>
+                <p>
+                  Association with the Enterprise Travel Agents Association
+                  and the professional travel community.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,7 +299,7 @@ export default function About() {
             <h2>From choosing your university to getting ready to fly.</h2>
             <p>Our goal is to give students and parents one dependable point of support throughout the international education journey.</p>
           </div>
-          <Link className="btn light-btn" to="/contact">Contact Oasis Educares <ArrowRight size={17}/></Link>
+          <Link className="btn light-btn" to="/contact">Contact Oasis Educares <ArrowRight size={17} /></Link>
         </div>
       </section>
     </section>

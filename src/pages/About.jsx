@@ -91,7 +91,7 @@ export default function About() {
             <div className="director-photo-wrap">
               <div className="director-photo-card">
                 <img
-                  src="/director.png"
+                  src="/images/about/director.png"
                   alt="Director - The Oasis Xpress Travel And Tours"
                   className="director-photo"
                 />
@@ -209,7 +209,7 @@ export default function About() {
           <div className="credentials-strip">
             <div className="credential-item">
               <div className="credential-logo iata">
-                <img src="/IATA_Accredited_Agent.png" alt="IATA Accredited Agent" />
+                <img src="/images/accreditation/IATA_Accredited_Agent.png" alt="IATA Accredited Agent" />
               </div>
               <div className="credential-content">
                 <h3>IATA</h3>
@@ -225,7 +225,7 @@ export default function About() {
 
             <div className="credential-item">
               <div className="credential-logo taai">
-                <img src="/TAAI_Member.png" alt="TAAI Member" />
+                <img src="/images/accreditation/TAAI_Member.png" alt="TAAI Member" />
               </div>
               <div className="credential-content">
                 <h3>TAAI</h3>
@@ -241,7 +241,7 @@ export default function About() {
 
             <div className="credential-item">
               <div className="credential-logo tafi">
-                <img src="/TAFI_Member.png" alt="TAFI Member" />
+                <img src="/images/accreditation/TAFI_Member.png" alt="TAFI Member" />
               </div>
               <div className="credential-content">
                 <h3>TAFI</h3>
@@ -257,7 +257,7 @@ export default function About() {
 
             <div className="credential-item">
               <div className="credential-logo etaa">
-                <img src="/ETAA_Member.png" alt="ETAA Member" />
+                <img src="/images/accreditation/ETAA_Member.png" alt="ETAA Member" />
               </div>
               <div className="credential-content">
                 <h3>ETAA</h3>
@@ -305,3 +305,4 @@ export default function About() {
     </section>
   );
 }
+

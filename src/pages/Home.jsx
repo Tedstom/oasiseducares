@@ -29,18 +29,18 @@ const whyBulgarian = [
 
 const testimonialProfiles = {
   "Alwin Thomas": {
-    photo: "/testimonial-alwin-thomas.png",
+    photo: "/images/testimonials/testimonial-alwin-thomas.png",
 
   },
   "Alwin Rajan": {
-    photo: "/testimonial-alwin-rajan.png",
+    photo: "/images/testimonials/testimonial-alwin-rajan.png",
 
   },
   "Beon Sibi": {
-    photo: "/testimonial-beon-sibi.png",
+    photo: "/images/testimonials/testimonial-beon-sibi.png",
   },
   "Muhammed Aslam Shereef": {
-    photo: "/testimonial-muhammed-aslam-shereef.png",
+    photo: "/images/testimonials/testimonial-muhammed-aslam-shereef.png",
   },
 };
 
@@ -341,3 +341,4 @@ function Stat({ icon, value, label }) {
 function CalendarIcon() {
   return <span className="calendar-icon">▣</span>;
 }
+

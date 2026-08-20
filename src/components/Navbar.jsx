@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           <img
             className="brand-logo"
-            src="/navbarlogo.png"
+            src="/images/branding/navbarlogo.png"
             alt="Oasis Educares"
           />
         </Link>
@@ -72,3 +72,4 @@ export default function Navbar() {
     </header>
   );
 }
+

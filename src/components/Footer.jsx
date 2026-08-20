@@ -26,7 +26,7 @@ export default function Footer() {
 
                     <div className="footer-logo-only">
                         <img
-                            src="/footer-logo.png"
+                            src="/images/branding/footer-logo.png"
                             alt="Oasis Educares"
                         />
                     </div>

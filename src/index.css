@@ -266,7 +266,7 @@ textarea {
 .landing-hero-image {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(247, 251, 255, .98) 0%, rgba(247, 251, 255, .93) 38%, rgba(247, 251, 255, .18) 67%, rgba(247, 251, 255, .02) 100%), url("/mbbs-students-hero.jpg") center/cover
+  background: linear-gradient(90deg, rgba(247, 251, 255, .98) 0%, rgba(247, 251, 255, .93) 38%, rgba(247, 251, 255, .18) 67%, rgba(247, 251, 255, .02) 100%), url("/images/hero/mbbs-students-hero.jpg") center/cover
 }
 
 .landing-hero-content {
@@ -1312,7 +1312,7 @@ textarea {
   }
 
   .landing-hero-image {
-    background: linear-gradient(90deg, rgba(247, 251, 255, .97), rgba(247, 251, 255, .74)), url("/mbbs-students-hero.jpg") center/cover
+    background: linear-gradient(90deg, rgba(247, 251, 255, .97), rgba(247, 251, 255, .74)), url("/images/hero/mbbs-students-hero.jpg") center/cover
   }
 
   .landing-copy {
@@ -2310,7 +2310,7 @@ html[data-theme="light"] .credentials-strip {
 .enquiry-hero-image {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(235, 244, 255, .98) 0%, rgba(235, 244, 255, .94) 38%, rgba(235, 244, 255, .35) 68%, rgba(235, 244, 255, .05) 100%), url('/mbbs-students-hero.jpg') right center/cover no-repeat
+  background: linear-gradient(90deg, rgba(235, 244, 255, .98) 0%, rgba(235, 244, 255, .94) 38%, rgba(235, 244, 255, .35) 68%, rgba(235, 244, 255, .05) 100%), url('/images/hero/mbbs-students-hero.jpg') right center/cover no-repeat
 }
 
 .enquiry-hero-inner {
@@ -2628,7 +2628,7 @@ html[data-theme="light"] .credentials-strip {
   }
 
   .enquiry-hero-image {
-    background: linear-gradient(90deg, rgba(235, 244, 255, .96), rgba(235, 244, 255, .72)), url('/mbbs-students-hero.jpg') center/cover
+    background: linear-gradient(90deg, rgba(235, 244, 255, .96), rgba(235, 244, 255, .72)), url('/images/hero/mbbs-students-hero.jpg') center/cover
   }
 
   .enquiry-hero-inner {
@@ -3987,7 +3987,7 @@ html[data-theme="dark"] .landing-hero {
 html[data-theme="dark"] .landing-hero-image {
   background:
     linear-gradient(90deg, rgba(4, 13, 29, .98) 0%, rgba(5, 18, 40, .93) 38%, rgba(5, 18, 40, .68) 64%, rgba(5, 18, 40, .28) 100%),
-    url("/mbbs-students-hero.jpg") center/cover !important;
+    url("/images/hero/mbbs-students-hero.jpg") center/cover !important;
 }
 
 html[data-theme="dark"] .landing-copy,

@@ -145,7 +145,7 @@ export default function About() {
               </p>
 
               <p>
-                His background in <strong>technology and software development</strong>
+                His background in <strong> technology and software development </strong>
                 has also shaped the company's approach to combining professional
                 travel expertise with modern digital solutions.
               </p>

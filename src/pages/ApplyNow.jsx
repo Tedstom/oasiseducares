@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { countries } from "../data/siteData";
 
-const API_URL = "http://127.0.0.1:8000/api/counselling/";
+const API_URL = "https://api.oasiseducares.com/api/counselling/";
 
 export default function ApplyNow() {
   const [submitted, setSubmitted] = useState(false);
